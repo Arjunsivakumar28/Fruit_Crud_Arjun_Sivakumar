@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <link type="text/css" rel="stylesheet" href="./style.css">
+
+</head>
+    
+<body>
+    
+    <div id="duplicateWarning"></div>
+    <div class="container-cus mt-2">
+        <form>
+            <input class="w-100" type="text" id="fname" name="fname" placeholder="Fruit Name">
+            <br><br>
+
+            <input class="w-100" type="text" id="fcolor" name="fcolor" placeholder="Fruit Color">
+
+        </form>
+        <br>
+        <div class="d-flex">
+            <button class="btn btn-outline-success w-100 me-2" id="addFruit" onclick="saveFruits()">Add
+                Fruit</button>
+
+            <button class="btn btn-outline-danger w-100 me-2" id="rset" onclick="reset()">Reset</button>
+
+            <button class="btn btn-outline-primary w-100" id="printFruits" onclick="printFruits()">Print
+                Fruits</button>
+        </div>
+
+    </div>
+
+    <div id="displayFruits"></div>
+
+    <!-- DO BUG FIXES and IMPROVED UI -->
+
+    <!-- More bug fixes Duplicates, update objects with same name/color 
+    Set ID number generate unique value for each object 
+    When edit is pressed disable other buttons
+    Cancel edit when edit is clicked
+    enable update fruit only when edit is clicked
+    Get KT (knowledge transfer in session)
+    Object find (figure out is object can be put in find)-->
+
+    <!-- Put script tag at bottom og body tag to make sure that the DOM is loaded before the script is executed. -->
+    <script src="main.js"></script>
+</body>
+
+</html>

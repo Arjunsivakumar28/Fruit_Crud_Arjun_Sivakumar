@@ -1,0 +1,12 @@
+.container-cus {
+    margin  : 1rem;
+    padding : 1rem;
+    width: 400px;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.left-side { 
+    height: 100%;
+}
+
